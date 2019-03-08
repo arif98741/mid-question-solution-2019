@@ -17,3 +17,6 @@ join Took on Student.sID = Took.sID
 join Offering on Took.oID = Offering.oID
 join Course on Course.cNum = Offering.cNum 
 where Course.dept = 'CSE311' and Took.totalMarks = (select max(Took.totalMarks) from Took)
+
+-- done using join. you can also use sub-query. But I prefer join query as well. In
+--real life i prefer and use join
